@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style19.css">
+</head>
+<!-- 2022.12.28 박스모델 -->
+<body>
+ <h1>요소의 크기</h1>
+ <!-- (중요!)부모와 자식 크기를 보고 부모가 자식을 덮는경우도 있고 마지막 자식 텍스트에 패딩을 주면 다음 콘텐츠를 밀어내는 경우도 있음 -->
+
+ <!-- 블록 요소의 경우 위 아래 콘텐츠 둘 다 마진을 가지면 더 큰 값을 가진것 만큼만 밀려남.-->
+ <!-- 24px과 14px이 서로 밀어낸다 X 24px만큼만 밀어냄  -->
+
+ <p>margin과 padding은 -top, -bottom, -left, -right을 속성명에 붙여 따로 지정해줄 수 있습니다.
+</p>
+<p class="special">
+  이를테면 이런 상황에서 유용하죵.
+</p>
+
+<div>
+  margin에서 <em>auto</em> 값은 너비가 지정된 블록 요소의 <br>
+  가로 방향에서 남은 공간을 채웁니다. <br><br>
+  이 방법은 컨텐츠 섹션을 화면 가운데로 배치하는데 <br>
+  널리 사용되었죠. <br><br>
+  오늘날에는 이후 배울 <strong>flex</strong> 방식으로 많이 대체되었습니다.
+
+<div>응애<div>
+  
+</div>
+</body>
+</html>

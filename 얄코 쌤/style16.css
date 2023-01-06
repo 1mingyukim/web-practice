@@ -1,0 +1,35 @@
+/* 저스티파이 justify 이거 참 깔끔해 */
+p {
+  /* left, center, right, justify */
+  text-align: justify;
+
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  line-height: 5em;
+  text-indent: 3em;
+}
+/* letter-spcaing 은 글자간 공백 크기
+word-spacing은 공백 크기 결정
+line-height는 글자 줄 간 크기 결정
+text-indent는 첫줄 들여쓰기  크기 결정 */
+
+
+
+ul {
+  list-style: circle;
+}
+
+/* li별로 지정하는 것도 가능 */
+ul > li:first-child {
+  list-style: "🚩 "
+}
+
+ol {
+  list-style: url(https://showcases.yalco.kr/html-css/02-03/yalco.png);
+}
+/* list-style 속성 사용 */
+/* ul은 기본적으로 disc ol은 decimal이 지정되어있음 */
+/* 앞대가리 이미지를 지정한걸로 변경 할  수 있음 */
+
+/* !중요 저게 바뀐다고 html 코드가 바뀌는건 아님
+Ex) 순서가 있는 ol이 순서가 없어지거나 순서가 없는 ul이 순서가 생긴다거나 그러진 않음 */

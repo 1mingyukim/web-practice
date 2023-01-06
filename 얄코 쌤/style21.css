@@ -1,0 +1,89 @@
+.outer{
+  width: 200px; height: 200px;
+  background-color: #eee;
+}
+.with-bg{
+  height: 100%;
+  background-image: url(https://showcases.yalco.kr/html-css/02-08/images/mona-lisa.jpg);
+  background-repeat:  none;
+  /* 굳이 안줘도 됨 */
+  background-position: none;
+  /* 굳이 안줘도 됨 */
+  background-size: cover;
+  border-radius: 50%;
+}
+/* 만약 아우터에만 border-radius: 50%; 을 주면 안에 있는 .with-bg가 더 커서 적용이 안됨 .
+이때 쓰는게 overflow:hidden이다.
+overflow:hidden을 아우터에 주면 해결됨 */
+
+.hhh{
+  width: 200px; height: 200px;
+  background-color: #eee;
+  border-radius: 20%;
+  overflow: hidden;
+}
+.hh{
+  height: 100%;
+  background-image: url(https://showcases.yalco.kr/html-css/02-08/images/mona-lisa.jpg);
+  background-repeat:  none;
+  /* 굳이 안줘도 됨 */
+  background-position: none;
+  /* 굳이 안줘도 됨 */
+  background-size: cover;
+ 
+}
+/* 성공! */
+
+
+/* background-repeat.
+repeat은 반복해서 해줌.
+즉 repeat-x는 x축으로 같은이미지를 반복해서 넣어줌 */
+
+/* space는 모서리를 이미지 로 채움 공간 크기에 따라 배치가 달라짐 */
+
+/* round는 가장 적절한 크기를 찾아 꽉 채움 */
+
+/* 패딩같은거 처럼 x축 ,y축 값 따로 줄 수 있음 */
+
+/* background-position으로 백그라운드 기준 위치를 잡을 수 있음. */
+
+/* background-size로 이미지 크기를 조절함 디폴트 값으로는 auto가 원래 값임. */
+
+/* 이미지 넣을때 주의할점
+가로로 긴 경우
+background-repeaat는 no-repeat으로
+
+background-size는 contain 으로
+
+background-position은 센터로
+
+그 다음 높이나 크기 맞추기*/
+
+/* 세로로 긴 경우도 보고 저렇게 맞추기 */
+
+/* 사이즈를 cover로 하면 백그라운드 크기를 꽉 채움 */
+
+.bg{
+  width: 300px;
+  height: 400px;
+  background-color: aqua;
+  background: linear-gradient(45deg, red, transparent 80%);
+}
+
+/* 45도 각도로, 빨간색부터, 흰색으로.빨간색이 차지하는 확률이 80% 색으로 점점 */
+
+#bg{
+  width: 400px;
+  height: 400px;
+  
+background: linear-gradient(90deg, pink, 50%, indigo);
+}
+
+
+/* 두가지색 그라데이션 
+핑크가 50%차지하고 그뒤에 인디고*/
+
+/* linear-gradient(red20%, white 40%, blue100%)이렇게 값 줘서 3개도 가능 */
+
+/* (중요!)linear-gradient(red 33%, white 33%, white 67%, blue 67%)
+이렇게 값을 주면 네덜란드 국기처럼 완벽한 영역을 가짐!  */

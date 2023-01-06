@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 2022.12.23 입력3 추가 -->
+<body>
+  <h2>
+    progress 태그
+  </h2>
+  <progress 
+    id="progressBar" 
+    max="100">
+    0%
+    <!-- value값 따로 주면 거기까지 차있음 ex) value = "60".
+      밑에 퍼센트가 왜있지? 정확한 수치 표현을 위해 그냥 적어둔거임!-->
+  </progress>
+  <button id="prgStartBtn" type="button">시작</button>
+
+  <br><br>
+
+  <h2>
+    meter 태그
+  </h2>
+  <!-- 미터의경우 min 최솟값이 필수임 progressBar는 굳이 필요x 디폴트 0 -->
+  <!-- low, high 값들을 그어 3등분 한뒤 value 값 기준으로 색깔 나눔 
+       여기서 중요한건 optimum(기준) 이다. 이 기준값에 속하는건 초록색임.-->
+       <!-- 그래서 초록색의 위치가 다 다른거임 범위안에 optimum 값이 있으면 초록!기장 optimum과 거리가 먼 값은 안정적이지못해 빨간색임. -->
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="50" value="80">
+    80달러
+  </meter>
+
+  <br>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="10" value="80">
+    80달러
+  </meter>
+
+  <br>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="20">
+    20달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="50">
+    50달러
+  </meter>
+
+  <meter 
+    min="0" max="100"
+    low="33" high="67"
+    optimum="90" value="80">
+    80달러
+  </meter>
+</body>
+</html>

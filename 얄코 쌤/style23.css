@@ -1,0 +1,28 @@
+.wwe{
+  width: 300px;
+  height: 200px;
+  background-color: indigo;
+  line-height: 180px;
+  text-align: center;
+  cursor: not-allowed;
+}
+
+
+p{
+  padding: 30px;
+  background-color: pink;
+   cursor: pointer;
+    opacity: 0.5;
+    visibility: visible;
+    display: inline-block;
+  }
+
+/* opacity = 오퍼시티 불투명도 0 ~ 1값
+기능에 문제는 없음 투명하게만 함*/
+
+/* visibilit= 비저빌리티
+비저블 or 히든
+히든으로 하면 안보이게 됨.
+제기능도 하지않음 */
+
+/* display 속성 none 주면 아예 제기능도 안하고 자리도 사라짐. 없어짐 걍 */

@@ -1,0 +1,61 @@
+/* 그 폰트에서 지원 하지 않는 경우 적용 X */
+
+p {
+  font-style: italic;
+
+  font-weight: bold;
+}
+/* 폰트 크기를 어디에 적용하느냐에 따라서도 달라짐 */
+/* ex) 1.5 em = 150% 
+   단위를 잘 봐야함*/
+   /* rem의 경우 맨 바깥 처음 텍스트 크기에 비례해서 커지기만함. 점점커지고 그런거 없음 ex)1.5 rem */
+
+   html {font-size: 14px;}
+
+   div {font-size: 2em;}
+
+   /* 바깥은 14px 로 시작 중간은 바깥의 200% 안쪽은 중간의 200% */
+
+
+
+h {
+  text-decoration: wavy overline blue 10px;
+
+  text-transform: uppercase;
+}
+/* 전부 대문자로 */
+/* 텍스트에 파란색 10px짜리 물결표 해주기 */
+
+
+   /* text-decoration 속성은 밑줄, 취소선, 물결선 등으로
+글을 꾸며주는데 사용됩니다.
+
+여러 꾸밈요소를 함께 사용할 수 있으며
+선의 형태, 색, 굵기 등 디테일을 지정할 수도 있습니다.
+
+아래 링크에서 상세 내용과 구성 속성들을 확인하세요.
+
+text-transform 속성은 알파벳의 대소문자 표시에 사용됩니다.
+
+HTML, CSS와 같이 대문자로 작성된 텍스트는 capitalize에 영향을 받지 않습니다. */
+
+.abcc {
+  text-shadow: 2px 2px rgb(13, 189, 51);
+}
+
+#acbb {
+  text-shadow:
+    /* 안쪽 흰색 그림자 */
+    1px 0 white, -1px 0 white, 0 1px white, 0 -1px white, 
+    1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white,
+
+    /* 바깥쪽 미국자두색 그림자 */
+    2px 0 plum, -2px 0 plum, 0 2px plum, 0 -2px plum,
+    2px 1px plum, -2px 1px plum, 1px 2px plum, 1px -2px plum,
+    2px -1px plum, -2px -1px plum, -1px 2px plum, -1px -2px plum,
+    2px 2px plum, 2px -2px plum, -2px 2px plum, -2px -2px plum;
+}
+/* 테두리 2개 흰색은 10개 보라색은 20개 왤까..? */
+
+/* x=2 y=2 색은 빨간색의 그림자 생성 */
+/* 'x좌표, y좌표, 흐림(선택), 색' 형식의 text-shadow 태그 */

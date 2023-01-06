@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 사용자로부터 입력받기 3 2022.12.23 -->
+<body>
+  <!-- textarea태그 = 사용자 타이핑하는 텍스트 입력받음 -->
+  <h1>사용자로 부터 입력받는 텍스트 출력</h1>
+  <textarea name="message" id="message" cols="30" rows="10"placeholder = "기본값"></textarea>
+  <!-- 64열 5행짜리정도 크기의 택스트 칸 생성 크기를 넘어갈순 있음 -->
+  <!-- 다른 인풋들과는 다르게 벨류값을 따로 안주고 직접 입력함 -->
+
+  <h1>옵션들을 사용하는 태그</h1>
+
+  <h2>select, option 태그</h2>
+
+  <label for="lang">언어</label> <br>
+  <select id="lang">
+    <option value="">-- 언어 선택 --</option>
+    <option value="html">HTML</option>
+    <option value="css">CSS</option>
+    <option value="js">자바스크립트</option>
+    <option value="ts">타입스크립트</option>
+  </select>
+  <h3>내가 만든거</h3>
+  <label for="kim"> kim </label> <br>
+  <select id="kim">
+    <option value="">쿡가들</option>
+    <option value="영국">영쿡</option>
+    <option value="일본">니뽄</option>
+    <option value="미쿡">유에쎄</option>
+  </select>
+  <br><br>
+
+  <h2>optgroup 태그</h2>
+
+  <label for="shopping">쇼핑 목록</label> <br>
+  <select id="shopping">
+    <optgroup label="과일">
+      <option value="f_apl">사과</option>
+      <option value="f_grp">포도</option>
+      <option value="f_org">오렌지</option>
+    </optgroup>
+    <optgroup label="채소">
+      <option value="v_crt">당근</option>
+      <option value="v_tmt">토마토</option>
+      <option value="v_ept">가지</option>
+    </optgroup>
+    <optgroup label="육류">
+      <option value="m_bef">소고기</option>
+      <option value="m_prk">돼지고기</option>
+      <option value="m_ckn">닭고기</option>
+    </optgroup>
+  </select>
+  <h3>내가 만든거2</h3>
+  <label for="min">min</label> <br>
+  <select id="min">
+  <optgroup label="한식">
+    <option value="한쿡쌀">한쿡쌀</option>
+    <option value="딱뽀끼">딱뽀끼</option>
+    <option value="불코키">불코키</option>
+  </optgroup>
+  <optgroup label="양식">
+    <option value="파스타">파스타</option>
+    <option value="리조또">리조또</option>
+    <option value="피짜">피짜</option>
+  </optgroup>
+  <optgroup label="중식">
+    <option value="자좡미엔">자좡미엔</option>
+    <option value="쩀뽕">쨈뽕</option>
+    <option value="탕수유크">탕수유크</option>
+  </optgroup>
+</select>
+  <br><br>
+
+  <h2>datalist 태그</h2>
+
+  <label for="job">현재 직업</label> <br>
+  <input id="job" list="jobs">
+  <datalist id="jobs">
+    <option value="학생">
+    <option value="디자이너">
+    <option value="퍼블리셔">
+    <option value="개발자">
+  </datalist>
+  <!-- list 이름과 datalist의 id가 같아야 연동댐 주의! -->
+  <h3>내가 만든거3</h3>
+  <label for="gyu">gyu</label> <br>
+  <input type="text" id="name." list="names.">
+  <datalist id="names.">
+    <option value="가짜1"></option>
+    <option value="가짜2"></option>
+    <option value="진짜1"></option>
+  </datalist>
+  <!-- <datalist>의 경우 뭔가 쓰기 어렵다. 찾아서 잘 써보고 양식 잘 보자 -->
+    <!-- datalist 사용시 클릭하면 원하는 텍스트가 나옴. 그리고 그걸 지워야 다시 텍스트 클릭 사용 가능 -->
+</body>
+</html>

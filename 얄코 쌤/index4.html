@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-04/05.css"><!--페이지꺼 가져다 쓴거임. css인듯 css로 스타일넣어줌-->
+  <title>Document</title>
+</head>
+<!-- 나열되는 요소들 2022.12.21 -->
+<body>
+<!-- ul은 순서 상관 X ol은 순서 상관O li는 그냥 리스트 -->
+<!-- li태그는 자식 태그. ul,ol의 1촌 자식은 오직 li만 가능! -->
+  <h1>
+    <strong>수련회 준비물</strong>
+  </h1>
+  <ul>
+  <li>이틀치 옷</li>
+  <li>세면 도구</li>
+  <li>수건</li>
+  <li>학습 도구</li>
+  <!-- 여기서 포인트. ul 안에 ul이 또 들어가면서 추가로 밀어쓰게댐 -->
+  <ul>
+    <li>노트북</li>
+    <li>필기구</li>
+    <li>교재</li>
+    <ul>
+      <li>궁금해서 한번만 더 해봄</li>
+    </ul>
+  </ul>
+</ul>
+<!-- 쉽게하기 ex) ul>li*4  <-하게 되면 ul안에 li4개 있는걸로 생성 -->
+<!-- ol사용 순서가 필요함 계란볶음밥 만들기 -->
+<h2> <em>계란 볶음밥 만들기</em> </h2>
+<ol type="A" start = "3"><!-- 알파벳 대문자 기준으로 시작.3이니까 A,B,C부터 시작! -->
+  <li>재료 준비<ul><li>밥</li><li>계란</li><li>파</li><li>간장</li></ul>
+  </li>
+  <li>파를 기름에 볶기</li>
+  <li>밥 넣고 볶기</li>
+  <li>계란을 넣고 스크램블</li>
+  <li>간장을 넣고 마저 볶아 완성</li>
+</ol>
+<!-- 용어와 정의 나열하기 ex)사전 같은거dt와 dd 1:1, n:n 가능-->
+<dt>
+  프로그래밍<dd>컴퓨터 프로그램을 작성하는 일</dd>
+</dt>
+<dt>넓이</dt>
+<dt>광</dt>
+<dt>면적<dd>일정한 평면에 거렻 있는 공간이나 범위의 크기</dd></dt>
+<dt>사과<dd>사과나무의 열매</dd><dd>자기의 잘못을 인정하고 용서를 빎</dd></dt>
+
+</body>
+</html>

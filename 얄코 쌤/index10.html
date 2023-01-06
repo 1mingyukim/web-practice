@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 사용자로부터 입력받기2 2022.12.22 -->
+<body>
+  <h1>텍스트 관련 인풋 타입</h1>
+
+  <form action="#">
+    <label for="txtIp">text</label> <br>
+    <input 
+      id="txtIp"
+      type="text"
+      placeholder="5자 이하"
+      maxlength="5"
+    >
+    <br><br>
+
+    <label for="pwdIp">password</label> <br>
+    <input
+      id="pwdIp"
+      type="password"
+      placeholder="4자 이상"
+      minlength="4"
+    >
+    <!-- 타입에 패스워드 역할은 뭘 입력하는지 안보임 **로뜸 -->
+    <br><br>
+
+    <label for="srchIp">search</label> <br>
+    <input id="srchIp" type="search">
+    <!-- search타입은 검색 바 라고 보면댐 x표시로 타이핑 한걸 지울 수 있음 -->
+    <br><br>
+
+    <label for="tlIp">tel</label> <br>
+    <input id="tlIp" type="tel">
+    <!-- input을 tel 로 해놓으면 클릭시 숫자 키패드가  뜸  -->
+    <br><br>
+    <button type="submit">제출</button>
+  </form>
+
+  <h1>숫자 관련 인풋 타입</h1>
+
+  <form action="#">
+    <label for="numIp">number</label> <br>
+    <input 
+      id="numIp"
+      type="number"
+      min="0"
+      max="10"
+    >
+    <!-- 숫자만 받음 -->
+    <br><br>
+
+    <label for="rgIp">range</label> <br>
+    <input
+      id="rgIp"
+      type="range"
+      min="0"
+      max="100"
+      step="20"
+    >
+    <br><br>
+
+    <label for="dtIp">date</label> <br>
+    <input
+      id="dtIp"
+      type="date"
+      min="2020-01-01"
+      max="2030-12-31"
+    >
+    <br><br>
+
+  </form>
+  <h1>체크 관련 인풋 타입</h1>
+<!-- *중요!!!!! 체크박스가 먼저오니 인풋 다음 레이블 -->
+  <form action="#">
+    <h2>checkbox</h2>
+    <input 
+      id="cbIp"
+      type="checkbox"
+      checked
+    >
+    <!-- checked를 적어주면 페이지들어갔을때 디폴트 값으로 체크가 되어있음 -->
+    <label for="cbIp">유기농</label> <br>
+  <!-- cbIp로 지정해줘서 유기농 이라는 텍스트를 클릭해도 체크박스가 클릭되게함 -->
+    <h2>radio</h2>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_apple"
+      value="apple"
+      checked
+    >
+    <!-- 사과에 디폴트 체크 -->
+    <label for="f_apple">사과</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+    >
+    <label for="f_orange">오렌지</label>
+    <br>
+
+    <input
+      type="radio"
+      name="vege"
+      id="v_carrot"
+      value="carrot"
+      checked
+    >
+    <!-- 당근에 디폴트 체크 -->
+    <label for="v_carrot">당근</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_tomato"
+      value="tomato"
+    >
+    <label for="v_tomato">토마토</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_eggplant"
+      value="eggplant"
+    >
+    <label for="v_eggplant">가지</label>
+
+  </form>
+  <!-- name을 똑같이 지정 해주는것으로 그룹화를 시킴. 각 그룹마다 체크 하나씩 가능! 그래서 총 2개의 그룹 fruit,vege 이여서 체크 각각 하나씩 2개가능 과일 , 채소 -->
+  <!-- value값은 서버에 실제로 넘어가면 어떤 값을 줄지 적어놓은 것 -->
+
+  <h1>기타 인풋 타입</h1>
+
+  <form action="#">
+    <label for="fileIp">file</label> <br>
+    <input 
+      id="fileIp"
+      type="file"
+      accept="image/png, image/jpeg"
+      multiple
+    >
+    <!-- type =file 파일 타입의 형식을 받는 인풋. 
+    accept = png,jpeg 이미지 파일중 png와 jpeg만 받는다. 
+    multiple = 여러개 받을 수 있다? 렁답입니다~ 적지않으면 하나만 가져올 수 있음 드래그가 안돔! -->
+    <br><br>
+
+    <label for="hdnIp">hidden</label> <br>
+    <input
+      id="hdnIp"
+      type="hidden"
+    >
+    <!-- 함께 전송 되긴 하지만 사용자에게 보여지면 안되는 부분을 그냥 hidden 인풋을 사용함. -->
+  </form>
+
+  <br><hr><br>
+
+  <form action="#">
+    <label for="emlIp">email</label> <br>
+    <input 
+      id="emlIp"
+      type="email"
+    >
+    <!-- e-mile 형식으로 텍스트를 받음. @가 들어가야한다고 오류가뜸 -->
+    <br><br>
+
+    <button type="submit">제출</button>
+  </form>
+
+  <h1>인풋 요소 공통(대부분) 속성</h1>
+
+  <form action="#">
+    <label for="valIp">value</label> <br>
+    <input 
+      id="valIp"
+      type="text"
+      value="지정됨"
+    >
+    <!-- 기본값으로 지정됨 이 적혀있음 텍스트를 입력하면 "지정됨"이 사라짐 -->
+    <!-- value 를 이용한 기본값의 경우 로그인 페이지에서 "아이디나 비밀번호 저장"
+    기능이라고 보면 된다. 그 사이트를 들어갔을때 정보가 입력 되어 있으며 변경 가능하다. -->
+    <br><br>
+
+    <label for="afIp">autofocus</label> <br>
+    <input 
+      id="afIp"
+      type="text"
+      placeholder="자동 포커스됨"
+      autofocus
+    >
+    <!-- 오토 포커스의 경우 페이지를 들어왔을때 우선적으로 포커싱이 되어있는 부분을 말 한다. 새로고침했을시에도 동일 -->
+
+    <!-- 우리가 로그인을 할때 아이디 칸에 포커싱이 맞춰져 있는것이 이것이다. 
+    가장 먼저 입력 할 수 있게! -->
+
+    <!-- placceholder의 경우 인풋에 입력값이 없을때 자동으로 뜨게된다.
+    
+    value값을 주는것과 차이점은 텍스트 입력 후 입력값을 지워도 디폴트 값으로 뜨게된다. -->
+    <!-- 기본값으로 자동 포커스됨 이 적혀있음 -->
+    <br><br>
+
+    <label for="roIp">readonly</label> <br>
+    <input 
+      id="roIp"
+      type="text"
+      value="읽기만 가능, 전송됨"
+      readonly
+    >
+    <!-- readonly를 줌으로써 사용자는 읽는것만 가능. 텍스트를 입력한다거나 변경할 수 없음. 클릭은 가능 -->
+    
+    <br><br>
+
+    <label for="rqIp">required</label> <br>
+    <input 
+      id="rqIp"
+      type="text"
+      placeholder="필수입력!"
+      required
+    >
+    <!-- required를 줌으로써 입력하지않고 전송 할 수 없게 함. 
+    그냥 제출을 누르면 입력하라고 오류가 뜸. -->
+    <br><br>
+
+    <label for="daIp">disabled</label> <br>
+    <input 
+      id="daIp"
+      type="text"
+      placeholder="입력불가, 전송 안됨"
+      disabled
+    >
+    <!-- disabled을 줌으로써 이 인풋은 클릭조차 안되며, 전송 되지 않는 데이터이다. -->
+    <br><br>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_apple"
+      value="apple"
+      checked
+    >
+    <label for="f_apple">사과</label>
+
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+      disabled
+    >
+    <label for="f_orange">오렌지(품절)</label>
+    <!-- 우선 name=fruit으로 그룹화를 시켜 3개중 하나만 체크 가능하게 만듬. 
+    그 다음 각각 고유의 id와 서버로 넘어갔을시 데이터인 value값을 주고 
+    오렌지는 품절. 즉 클릭 할 수 없게 disabled로 지정한것임
+    <br> -->
+
+    <br><br>
+
+    <button type="submit">제출</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* % 크기 단위는 부모의 크기 기준이다. */
+/* vw는 윈도우 창 기준으로 크기를 말 함. 50vw는 전체 윈도우 크기의 50%크기를 가짐 */
+/* vh는 윈도우 기준 높이를 말 함 */
+/* 가로, 세로중에 더 큰게 vmax, 더 작은게 vmin
+창을 늘려보면 정사각형 만들기 쉬움 */
+/* 텍스트가 한 줄일 경우 height과 line-height을 똑같이 맞춰주면
+세로 방향에서 가운데로 정렬한 것과 같은 모습이 됩니다.
+
+calc(100% - 50px)과 같은 형식으로 연산자를 사용하여
+필요에 맞는 길이로 조절할 수도 있습니다.*/
+h1{
+  font-size: 5vmin;
+}
+/* 이처럼 폰트에도 적용이 가능하다! 창을 줄이면 줄인 창 기준 5%의 크기
+텍스트다보니 !!(중요)!!vmin을 주면 더 작은 세로 기준으로 크기 변경 */
+
+p {
+  background-color: lightblue;
+  margin: 24px;
+  padding: 24px;
+}
+/* padding-left 왼쪽에만 패딩 줌. */
+/* 브라우저마다 기본적으로 어느정도의 마진값을 줌 */
+
+p.special {
+  margin-top: 48px;
+  /* margin-bottom: */
+  /* margin-left: */
+  /* margin-right: */
+
+  /* padding-top */
+  /* padding-bottom */
+  /* padding-left */
+  /* padding-right */
+}
+/* 특정 위치에만 값 주기도 가능 */
+
+/* auto 를 사용하여 오른쪽 왼쪽 공백기준 정 중앙 배치하기 */
+div {
+  /* display: inline-block;  */
+  width: 200px;
+  height: 200px;
+  background-color: orangered;
+  margin: 0 auto;
+}
+/* 값의 순서는 위 오른쪽 아래 왼쪽임 시계방향. ex)24px 24px 0 auto*/
+/* 인라인-블록은 auto? 가 안먹힘  */
+
+
+
+/* 혹시 인라인-블록을 사용 해서 페이지를 만든다면 방법이 있다! */
+
+body{
+  text-align: center;
+}
+
+div {
+  display: inline-block; 
+  width: 200px;
+  height: 200px;
+  background-color: orangered;
+  margin: 0 auto;
+}
+/* 이렇게 text-align :center; 해서 직접 중앙 배열 하면됨 */

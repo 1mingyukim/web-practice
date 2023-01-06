@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<!-- 표 사용하기 -->
+<body>
+  <link rel="stylesheet" href="https://showcases.yalco.kr/html-css/01-06/table.css">
+  <table>
+    <caption>1에서 9까지 숫자들 2022.12.22</caption>
+  
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </tr>
+  </table>
+  <!-- css비적용상태라 표라기보다는 그냥 숫자 배열임 적용하면 표 상태.-->
+  <table>
+    <caption>나혼자 먼저 해보기 표</caption>
+    <thead>
+      <tr>
+        <th scope = "col">과목</th>
+        <th scope = "col">월</th>
+        <th scope = "col">화</th>
+        <th scope = "col">수</th>
+      </tr>
+      <tr>
+        <th scope = "row">HTML</th>
+        <td>60분</td>
+        <td>60분</td>
+        <td>0분</td>
+      </tr>
+      <tr>
+        <th scope = "row">CSS</th>
+        <td>0분</td>
+        <td>30분</td>
+        <td>60분</td>
+      </tr>
+      <tr>
+      <th scope = "row">JS</th>
+      <td>0분</td>
+      <td>0분</td>
+      <td>60분</td>
+      </tr>
+      <tr>
+        <th scope = "row">총 시간</th>
+        <td>60분</td>
+        <td>90분</td>
+        <td>120분</td>
+      </tr>
+    </thead>
+  </table>
+  <!-- 헤더가 되는건 scope 해서 표시해주기. 기준잡기 행기준 헤더, 열기준 헤더 -->
+
+  <!-- 이번에 해볼건 셀 병합 일단 4*4 표 생성
+       colspan = 열 병합 / rowspan = 행 병합 원하는 칸에 넣기-->
+  <table>
+    <tr>
+      <td>1</td>
+      <td colspan = "2">2</td><!--이거 기준으로 2칸 먹겠다-->
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan = "3">3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td colspan = "2" rowspan = "2">4</td>
+    </tr>
+    <tr>
+      <td>1</td>
+    </tr>
+  </table>
+  <!-- 생각하며 짜야함. 라이브 서버로 돌려보면서 해보면 편함 이건 옛날방식 CS
+  S 안쓸때... 요즘은 이렇게 안함 -->
+  <table>
+    <!-- colgroup = 표에 열을 묶어서 속성 부여. 차례대로 주말1 평일5 주말1 
+         클래스로 지정해준건 표애서 나타내는 색이 다름 이것 역시 CSS로 지정해둔 것-->
+    <colgroup>
+      <col class="weekend">
+      <col span = "5">
+      <col class = "weekend">
+    </colgroup>
+  <thead>
+    <tr>
+   <th scope=" col">일</th>
+   <th scope=" col">월</th>
+   <th scope=" col">화</th>
+   <th scope=" col">수</th>
+   <th scope=" col">목</th>
+   <th scope=" col">금</th>
+   <th scope=" col">토</th>
+  </tr>
+  </thead>
+  <tr>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+body{
+  font-size: 1.24em;
+}
+div{
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: skyblue;
+  width: 30em;
+  text-align: justify;
+}
+p{
+  width: 24;
+}
+span {
+  background-color: yellow;
+}
+
+ul > li {
+  margin-right: 20em;
+}
+/* ul의 1촌자식 > li 들에게 옵션주기 */
+/* ctrl+shift+i 해보면 주황색으로 margin-right 20em 해서 여백 먹은게 보임 */
+
+.we > li {
+  margin-right: 2em;
+  display: inline-block;
+   padding: 8px;
+}
+
+p {
+  display: inline-block;
+  margin-right: 3em;
+  padding: 10px;
+}
+/* 인라인-블록으로 블록 처럼 전체를 안먹고 한줄에 배열 가능. 하나하나 마다 오른쪽 여백에서 2em잡아먹어서 띄엄띄엄 배치됨 */
+/* 패딩까지 주면서 텍스트의 아래 넓이 까지 크기 벌림  인라인은 패딩 안먹음.!*/

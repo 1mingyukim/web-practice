@@ -1,0 +1,73 @@
+/* 자손 결합자 (스페이스바. 공백 이용)*/
+/* 아우터 클래스 */
+/* 아우터 클래스의 li 안에 있는 애들 다 올리브 색으로? */
+.outer li {
+	color: olivedrab;
+}
+
+/* 자식(1촌 자손) 결합자  > 사용*/
+/* outer 클래스의 바로 밑에 1촌태그(첫번쨰 ul 안의 li)만 dodgerblu 로 지정. */
+.outer > li {
+	color: dodgerblue;
+}
+/* 아우터의 li 안에 li들을 밑줄 긋기 */
+.outer > li li {
+	text-decoration: underline;
+}
+
+/* 뒤따르는 모든 동생들 결합자 */
+/* starter 클래스 기준 뒤따르는 모든 li들  폰트를 italic로 변경 */
+.starter ~ li {
+	font-style: italic;
+}
+
+/* 뒤따르는 바로 다음 동생 결합자 */
+/* starter클래스의 바로 뒤 결합자의 폰트 변경 찐하게 bold? */
+.starter + li {
+	font-weight: bold;
+}
+
+/* 첫 번째, 마지막 요소 가상 클래스 */
+/* ol 안의 li 들의 첫번째 , 마지막색 변경 */
+ol li:first-child,
+ol li:last-child {
+	color: yellowgreen;
+}
+
+/* ~가 아닌 요소 가상 클래스 */
+/* 아우터 클래스 의 (공백) 1촌 자식 li 중 last 가 아닌것. 즉 마지막이  아닌것들만 골라서 */
+.outer > li:not(:last-child) {
+	text-decoration: line-through;
+}
+
+/* ul태그중 아우터 클래스가 아닌 li들 폰트 굵게 */
+/* 즉, li태그의 ul 과일 안의 li들 글씨 굵게 */
+ul:not(.outer) li {
+	font-weight: bold;
+}
+
+
+/* ~번째 요소 가상 클래스 */
+/* #, #n, #n+#, odd, even 등 시도해보기 */
+/* ol 태그 안의 li중 3번 "석삼"만 텍스트 굵게, 색 변경 */
+/* 3n을 할경우 3 단위로 딥핑크  3,6,9*/
+/* n+ 는 n기준 다음꺼 +1 이런식
+odd는 홀수 even은 짝수 */
+ol li:nth-child(3) {
+	font-weight: bold;
+	color: deeppink;
+}
+
+
+/* 마우스오버 가상 클래스 */
+/* 호버는 마우스가 올라간 것만 색 바꿈 */
+/* 즉, li 태그들에 마우스 올리면 파란색 찐한 택스트로 바뀜 */
+/* 태그로 줬기때문에 클래스나 id지정, 태그 + 태그 등 해준 애들에게는 밀림. */
+/* 더 자세하게 적어주면 우선순위 이김 */
+
+li:hover
+/* 만약우선수위 이길려면
+ol li:nth-child(3):hover 지정 해줘야함 , 로 따로*/
+{font-weight: bold;
+	color: blue;
+}

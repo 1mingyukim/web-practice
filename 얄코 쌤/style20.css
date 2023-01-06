@@ -1,0 +1,73 @@
+/* boder는 테두리 선을 의미한다. */
+/* solid(솔리드)는 단순한 직선을 말 함 */
+/* dashed(대쉬드)는 점선을 말 함 */
+/* dotted(닷드. 점)땡땡이. 점을 표현 */
+/* border-box의 경우 박스와 보더 값 즉, 텍스트 박스+ 패딩값 + 보더 값 까지 포함한 것으로 박스 크기 가짐,
+그냥 content-box 의 경우는 보더값이랑 패딩 값 없이 크기 가짐 */
+/* boder-radius는 각 꼭짓점을 둥글게 해줌. 값으로 정함. */
+
+ul > li{
+  border-bottom: 1px solid pink;
+}
+ul li:last-child{
+border-bottom: 0;
+}
+/* 마지막꺼는 지움으로써  깔끔함 */
+#er{
+  width: 200px;
+  height: 200px;
+  border: 5px solid blue;
+  border-radius: 50%;
+}
+/* 딱 둥글게는 50% */
+
+
+.outer {
+  width: 440px;
+  height: 320px;
+  background-color: #eee;
+  border: 2px solid #ddd;
+  overflow: auto;
+  overflow: auto;
+}
+.inner {
+  width: 120%;
+  height: 80%;
+  padding: 16px;
+  background-color: beige;
+  border: 2px solid darkorange;
+  overflow: scroll;
+}
+/* overflow 속성으로는 부모 요소보다
+높이나 너비값이 큰 자식 요소를 나타내는
+방법을 지정할 수 있습니다.
+
+overflow에 x축, y축 값을 함께 주거나
+overflow-x, overflow-y 속성들로
+따로 지정할 수도 있죠.
+
+한 쪽만 visible이면 auto와 같이 동작합니다. */
+/* (중요) 한쪽만 비지블 하는건 의미가 없다. 비지블은 할거면 x,y 둘 다! */
+/* auto,visible,scroll,hidden 이 있다. */
+
+
+
+/* box-shadow는 값이 총 4개 들어갈 수 있음
+x값,y값,blur값,spread값
+blur = 흐리게 퍼지는 값
+spread = 그림자의 크기
+박스의 그림자 모델 */
+
+/* inset을 넣을경우 바깥 그림자가 아닌, 안쪽 그림자가 됨 */
+.erq{
+ 
+    margin: 24px auto;
+    width: 240px;
+    height: 160px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 24px;
+    box-shadow: inset 2px 2px 10px 10px pink;
+  
+}
+/* 테두리색, 그림자 색 따로 지정 가능 */

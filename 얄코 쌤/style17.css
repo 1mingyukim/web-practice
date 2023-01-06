@@ -1,0 +1,27 @@
+.qw{
+  color: aqua;
+}
+h1 {
+  color: brown;
+background-color: aqua;
+}
+
+strong{
+  color: red;
+  background-color: #00FF00;
+}
+
+#wq{
+  color: green;
+  background-color: rgb(256, 0, 0,0.2);
+}
+/* 투명도 20%의 빨간색 */
+
+p{
+  color: aqua;
+  background-color: hsl(240, 50%, 50%);
+}
+/* 순서대로 색상, 채도, 밝기(명도) 임 */
+
+/* !(중요) 우서순위 항상 생각.
+우선순위 떄문에 id=wq는 자기 색도 가지고 p태그 색도 가짐 */
