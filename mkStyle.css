@@ -1,0 +1,137 @@
+body{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+/* 모든 a태그에 관하여 밑줄 지움. */
+
+#mk1{
+
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.mk1{
+  display: flex;
+  flex-basis: 100px;
+  padding: 20px;
+  background-color: pink;
+  gap: 500px;
+  align-items: flex-end;
+  justify-content: center;
+  background: linear-gradient(90deg, pink, 50%, #AB95D4);
+}
+
+.mk1 > * {
+  border: 2px solid orange; 
+  background-color: yellow;
+  font-size: 2em;
+  color: purple;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 5px 5px 10px 10px plum
+}
+
+h1{
+  text-shadow: 3px 0 plum;
+}
+
+sub {
+  font-size: small;
+  color: purple;
+}
+
+abbr{
+  color: green;
+}
+
+
+.mk2 :last-child{
+  list-style: "🚩" ;
+}
+
+.ff{
+  margin: 20px;
+  font-size: 20px;
+}
+
+table{
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+}
+
+th, tr{
+  border: 1px solid black;
+  padding: 20px;
+  
+}
+
+#king{
+  background-color: white;
+}
+
+.weekend {
+  background-color: #eee;
+}
+
+.htw{
+  background-color: pink;
+}
+
+.ht{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: pink;
+}
+
+.css{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: skyblue;
+}
+
+.cssw{
+  background-color: skyblue;
+}
+
+.htcsp{
+  display: inline-block;
+  background-color: beige;
+  width: 15px;
+  height: 15px;
+}
+
+.hcw{
+  background-color: beige;
+}
+
+.up{
+  display: inline-block;
+}
+
+#lang{
+  text-align: center;
+  display: block;
+  
+  
+  margin: 20px;
+}
+
+select{
+  width: 200px;
+  height: 30px;
+  padding: 0;
+}
+
+#footer{
+  background-color: tomato;
+  flex-basis: 100px;
+  padding: 30px;
+  }
